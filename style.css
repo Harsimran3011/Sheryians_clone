@@ -1,0 +1,292 @@
+@font-face {
+  font-family: manropeVariable;
+  src: url(./fonts/Manrope-VariableFont_wght.woff2);
+}
+
+@font-face {
+  font-family: machina;
+  src: url(./fonts/NeueMachina-Regular.woff2);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  color: #f2f2f2;
+  user-select: none;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  height: 6vw;
+  font-family: manropeVariable;
+}
+
+.anchors {
+  position: relative;
+  background: linear-gradient(170deg, #0c0c0c, #0c0c0c, #29292971);
+  border-radius: 10px;
+  padding: 18px 30px;
+  margin-right: 100px;
+}
+
+.anchors .glow1 {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  clip-path: polygon(0 0, 71% 78%, 67% 98%, 100% 99%, 0 100%, 0% 50%);
+}
+
+.anchors .glow2 {
+  clip-path: polygon(100% 86%, 20% 99%, 100% 100%);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+  right: 0;
+}
+
+nav .anchors ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  height: fit-content;
+  overflow-y: hidden;
+}
+
+.anchors ul li {
+  transition: all ease 0.3s;
+  color: #bab5b4;
+  font-size: 2vh;
+}
+
+ul li:nth-child(1) {
+  color: #ffffff;
+}
+
+nav ul li:nth-child(1)::after {
+  content: "Home";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  color: #e8602e;
+  bottom: -100%;
+  left: 0;
+}
+nav ul li:nth-child(2)::after {
+  content: "Courses";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  color: #e8602e;
+  bottom: -100%;
+  left: 0;
+}
+nav ul li:nth-child(3)::after {
+  content: "Bootcamp";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  color: #e8602e;
+  bottom: -100%;
+  left: 0;
+}
+nav ul li:nth-child(4)::after {
+  content: "Request Callback";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  color: #e8602e;
+  bottom: -100%;
+  left: 0;
+}
+
+nav ul li:nth-child(1):hover {
+  transform: translateY(-100%);
+}
+nav ul li:nth-child(2):hover {
+  transform: translateY(-100%);
+}
+nav ul li:nth-child(3):hover {
+  transform: translateY(-100%);
+}
+nav ul li:nth-child(4):hover {
+  transform: translateY(-100%);
+}
+
+nav .logo img {
+  height: 4.5vh;
+  cursor: pointer;
+}
+
+nav .signIn {
+  font-size: 2vh;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+nav .signIn .text {
+  width: 100%;
+  padding: 0 18px;
+  cursor: pointer;
+  overflow-y: hidden;
+}
+
+nav .signIn .text p {
+  position: relative;
+  transition: all ease 0.3s;
+}
+
+.signIn .text p::after {
+  content: "Sign In";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -100%;
+  left: 0;
+}
+
+.signIn .text p:hover {
+  transform: translateY(-100%);
+}
+
+.signIn:hover {
+  background-color: #e8602e;
+}
+
+.page1 {
+  min-height: calc(100vh - 7vw);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: manropeVariable;
+  background-image: url(./img/Background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+}
+
+.page1 .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: context-menu;
+}
+
+.page1 .content p {
+  font-size: 1.3vw;
+  color: #e8602e;
+  margin-bottom: 4vh;
+}
+
+.page1 .content h1 {
+  font-family: machina;
+  font-size: 3.8vw;
+  text-transform: capitalize;
+  font-weight: 300;
+  line-height: 4vw;
+}
+
+.page1 .content h2 {
+  font-size: 3vh;
+  font-weight: 300;
+  width: 55vw;
+  margin-top: 30px;
+  text-align: center;
+  color: #d0d4d7;
+}
+
+.content .img-container {
+  height: 40px;
+  display: flex;
+  position: relative;
+  margin: 30px 0;
+  font-size: 2vh;
+  color: #b3b2b3;
+}
+
+.img-container .imgDiv {
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.815);
+  margin-left: 20px;
+}
+
+.img-container .textDiv {
+  display: flex;
+  align-items: center;
+}
+
+.textDiv span {
+  color: #e8602e;
+  margin-right: 10px;
+}
+
+.content .btn {
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(to right, #ec602df1, #a1401c);
+  cursor: pointer;
+  padding: 20px 0;
+  border-radius: 20px;
+  border-top: 1px solid #747474;
+  border-right: 1px solid #ec602df1;
+  margin: 0;
+}
+
+.btnText {
+  padding: 0 60px;
+  overflow: hidden;
+}
+.btnText h5 {
+  font-size: 2vh;
+  position: relative;
+  transition: all ease 0.3s;
+}
+
+.btnText h5::after {
+  content: "Start Journey";
+  height: 100%;
+  width: 100%;
+  font-size: 2vh;
+  background-color: gb(197, 127, 127);
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+}
+
+.content .btn:hover .btnText h5 {
+  transform: translateY(-100%);
+}
+
+.content .btn:hover {
+  box-shadow: 0px 0px 100 px #e8602e;
+}
