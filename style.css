@@ -21,7 +21,6 @@ body {
   background-color: #000000;
   color: #f2f2f2;
   user-select: none;
-
 }
 
 nav {
@@ -31,6 +30,7 @@ nav {
   padding: 0px 80px;
   height: 6vw;
   font-family: manropeVariable;
+  backdrop-filter: blur(10px);
 }
 
 .anchors {
@@ -176,8 +176,12 @@ nav .signIn .text p {
   background-color: #e8602e;
 }
 
+nav i {
+  display: none;
+}
+
 .page1 {
-  min-height: calc(100vh - 7vw);
+  height: calc(100vh - 7vw);
   width: 100%;
   display: flex;
   align-items: center;
@@ -199,7 +203,7 @@ nav .signIn .text p {
 }
 
 .page1 .content p {
-  font-size: 1.3vw;
+  font-size: 40px;
   color: #e8602e;
   margin-bottom: 4vh;
 }
@@ -213,7 +217,7 @@ nav .signIn .text p {
 }
 
 .page1 .content h2 {
-  font-size: 3vh;
+  font-size: 1.5vw;
   font-weight: 300;
   width: 55vw;
   margin-top: 30px;
@@ -289,4 +293,266 @@ nav .signIn .text p {
 
 .content .btn:hover {
   box-shadow: 0px 0px 100 px #e8602e;
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  nav {
+    padding: 5vw 3vw;
+  }
+
+  nav .logo img {
+    height: 3vw;
+  }
+
+  .anchors ul li {
+    font-size: 2vw;
+  }
+
+  .anchors {
+    margin-right: 1vw;
+  }
+
+  nav .signIn {
+    font-size: 2vw;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+
+  .page1 {
+    max-width: 1500px;
+    text-align: center;
+  }
+
+  .page1 .content p {
+    font-size: 20px;
+  }
+
+  .page1 .content h1 {
+    font-size: 50px;
+    line-height: 50px;
+    white-space: wrap;
+    padding: 0 30px;
+  }
+
+  .page1 .content h2 {
+    font-size: 25px;
+    width: 80%;
+  }
+
+  .btn {
+    height: 6vh;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .img-container .textDiv {
+    font-size: 1.4vw;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 999px) {
+  nav {
+    padding: 5vh 4vh;
+  }
+
+  nav .logo img {
+    height: 2.5vh;
+  }
+
+  nav .anchors {
+    display: none;
+  }
+
+  nav i {
+    display: block;
+    font-size: 2vh;
+  }
+
+  nav .signIn {
+    display: none;
+  }
+
+  .page1 .content p {
+    font-size: 2vh;
+  }
+  .page1 .content h1 {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+
+  .page1 .content h2 {
+    font-size: 2vh;
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  .img-container .textDiv {
+    font-size: 30px;
+  }
+
+  .btn {
+    height: 3vh;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .btn .btnText {
+    padding: 0 30px;
+  }
+
+  .btn .btnText h5 {
+    font-size: 1.5vh;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 860px) {
+  nav {
+    height: 10vh;
+    padding: 2vh 4vh;
+  }
+
+  nav .logo img {
+    height: 3vh;
+  }
+
+  nav .anchors {
+    display: none;
+  }
+
+  nav i {
+    display: block;
+    font-size: 2vh;
+  }
+
+  nav .signIn {
+    display: none;
+  }
+
+  .page1 {
+    height: calc(100vh - 10vh);
+    padding: 0 2vh;
+    text-align: center;
+  }
+
+  .page1 .content p {
+    font-size: 1.5vh;
+    margin-bottom: 2vh;
+  }
+  .page1 .content h1 {
+    font-size: 4vh;
+    line-height: 5vh;
+  }
+
+  .page1 .content h2 {
+    font-size: 1.5vh;
+    margin-top: 1vh;
+    width: 100%;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+  }
+  .img-container img {
+    height: 3vh;
+  }
+  .img-container .textDiv {
+    font-size: 2.6vw;
+  }
+
+  .btn {
+    height: 3vh;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .btn .btnText {
+    padding: 0 30px;
+  }
+
+  .btn .btnText h5 {
+    font-size: 1.4vh;
+    font-weight: 400;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    min-height: 10vh;
+    padding: 2vh 4vh;
+  }
+
+  nav .logo img {
+    height: 3.5vh;
+  }
+
+  nav .anchors {
+    display: none;
+  }
+
+  nav i {
+    display: block;
+    font-size: 2.5vh;
+  }
+
+  nav .signIn {
+    display: none;
+  }
+
+  .page1 .content p {
+    font-size: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .page1 .content h1 {
+    font-size: 2.5vh;
+    line-height: 3vh;
+    text-align: center;
+    white-space: wrap;
+    object-fit: cover;
+  }
+
+  .page1 .content h2 {
+    font-size: 1.7vh;
+    margin-top: 1vh;
+    width: 100%;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+  }
+  .img-container img {
+    height: 3vh;
+  }
+  .img-container .textDiv {
+    font-size: 3vw;
+  }
+
+  .btn {
+    height: 3vh;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .btn .btnText {
+    padding: 0 30px;
+  }
+
+  .btn .btnText h5 {
+    font-size: 1.6vh;
+  }
 }
